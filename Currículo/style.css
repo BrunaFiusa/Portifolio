@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  height: 100vh;
+  position: fixed;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li button {
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  color: #3d3d3d;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 3px solid #2a3383;
+}
+
+.main-content {
+  margin-left: 200px;
+  padding: 0px;
+  background-color: #000;
+  height: 100vh;
+}
+
+.inicio {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  z-index: 1; /* garante que o texto fique na frente */
+  font-size: 35px; 
+  color: aliceblue;
+}
+
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* controla a "transparência" da imagem */
+  z-index: -1; /* manda a imagem para trás do conteúdo */
+}
+
+.inicio p {
+  font-size: 30px; /* aumenta o texto do parágrafo */
+  color: aliceblue;
+}
+
+/* topoSite */
+.topoSite {
+  margin-top: 0%;
+  padding: 60px 4%;
+  background-color: #332f2c;
+  color: #f1f1f1;
+}
+
+.topoSite .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.topoSite h1 {
+  font-size: 40px;
+  color: white;
+  margin: 30px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+  left: 15%;
+}
+
+.esquerda-topo-site::before {
+  content: "SOBRE MIM";
+  position: absolute;
+  left: 8%;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.esquerda-topo-site {
+  flex: 1;
+  max-width: 60%;
+  position: relative;
+  z-index: 2;
+}
+
+.esquerda-topo-site p {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.direita-topo-site {
+  flex: 1;
+  max-width: 35%;
+  position: relative;
+}
+
+.direita-topo-site ul {
+  list-style: none;
+  padding: 20px;
+  margin: 50px;
+}
+
+.direita-topo-site li {
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #666;
+}
+
+.direita-topo-site b {
+  color: #fff;
+}
+
+/*ESTILO FORMAÇÃO*/
+
+.formacao .flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+}
+
+.formacao{
+  padding: 10px 4% 40px 4%;
+  background-color: #332f2c;
+}
+
+.formacao::before {
+  content: "FORMAÇÃO";
+  position: absolute;
+  top: 1390px;
+  left: 42%;
+  font-size: 90px;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  z-index: 1;
+}
+
+h2.titulo{
+  color:#ffffff;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.formacao .formacao-box{
+  color:#ffffff;
+  padding: 50px 25px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: .2s;
+  max-width: 250px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formacao .formacao-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff79; 
+}
+
+.formacao .formacao-box img{
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 3px solid #2a3383;
+  margin-bottom: 20px;
+}
+
+/*Cursos*/
+
+.cursos {
+  background-color: #332f2c;
+  padding: 60px 4% 40px 4%;
+}
+
+.cursos::before {
+  content: "MEUS CURSOS";
+  position: absolute;
+  top: 2072px;
+  left: 18%;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cursos h2 {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+  left: 12%;
+}
+
+.cursos li {
+  color:#f1f1f1;
+  font-size: 20px;
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+/*HABILIDADES*/
+
+.habilidades .flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  text-align: center;
+}
+
+.habilidades {
+  padding: 10px 4% 40px 4%;
+  background-color: #332f2c;
+}
+
+.habilidades::before {
+  content: "HABILIDAES";
+  position: absolute;
+  top: 2703px;
+  left: 40%;
+  font-size: 95px;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  z-index: 1;
+}
+
+.habilidades h2 {
+  color:#ffffff;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.habilidades .habilidades-box h1 {
+  color:#ffffff;
+  font-size: 30px;
+}
+
+.habilidades .habilidades-box li {
+  list-style: none;
+  font-size: 18px;
+  padding-right: 30px;
+}
+
+.habilidades .habilidades-box{
+  color:#ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+  transition: .2s;
+  flex: 1 1 300px; 
+  max-width: 400px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border:  2px solid rgba(255, 255, 255, 0.308);
+}
+
+.habilidades .habilidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff4f; 
+}
