@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruna Fiusa | Ciência de Dados e IA</title>
+    <meta name="description" content="Portfólio de Bruna Fiusa: estudante de Ciência de Dados e Inteligência Artificial e Técnica em Desenvolvimento de Sistemas.">
+    <meta property="og:title" content="Bruna Fiusa | Ciência de Dados e IA">
+    <meta property="og:description" content="Dados, automação e IA aplicados a problemas reais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/fotoPerfil.jpg">
+    <link rel="icon" href="img/fotoPerfil.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- ================= MENU LATERAL ================= -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-head">
+            <a href="#inicio" class="brand">
+                <img src="img/fotoPerfil.jpg" alt="Foto de Bruna Fiusa" class="profile-pic">
+                <span class="brand-text">
+                    <strong>Bruna Fiusa</strong>
+                    <span>Ciência de Dados e IA</span>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav class="nav" id="menu" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio" class="active">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/bruna-fiusa/" target="_blank" rel="noopener" aria-label="LinkedIn de Bruna Fiusa"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/BrunaFiusa" target="_blank" rel="noopener" aria-label="GitHub de Bruna Fiusa"><i class="fab fa-github"></i></a>
+            <a href="mailto:bruna.fiusa2006@gmail.com" aria-label="Enviar e-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </aside>
+
+    <main class="main-content" id="conteudo">
+
+        <!-- ================= INÍCIO ================= -->
+        <section class="inicio" id="inicio">
+            <div class="inicio-content">
+                <p class="saudacao">Olá, eu sou a Bruna.</p>
+                <h1>Interessada em tecnologia, inovação e resolução de problemas.</h1>
+                <p class="subtitulo">
+                    Estudante de Ciência de Dados e Inteligência Artificial e Técnica em Desenvolvimento de Sistemas.
+                </p>
+                <div class="inicio-botoes">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn btn-outline">Falar comigo</a>
+                    <a href="Bruna_Fiusa.pdf" class="btn btn-outline" download>Baixar currículo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJETOS ================= -->
+        <section class="section" id="projetos">
+            <div class="container">
+                <h2 class="section-title">Projetos</h2>
+                <p class="section-lead">
+                    Estou construindo meus primeiros projetos com IA. Estes são os que estão em andamento.
+                </p>
+
+                <div class="projetos-grid">
+
+                    <article class="projeto-card">
+                        <span class="status">Em construção</span>
+                        <h3>Agente de triagem de reclamações</h3>
+                        <p>
+                            Lê reclamações de pedidos, classifica o problema (atraso, item faltando, qualidade)
+                            e sugere uma resposta para o atendente.
+                        </p>
+                        <ul class="tags">
+                            <li>n8n</li>
+                            <li>Claude / GPT</li>
+                            <li>Prompt engineering</li>
+                        </ul>
+                    </article>
+
+                    <article class="projeto-card">
+                        <span class="status">Em construção</span>
+                        <h3>Dashboard com perguntas em linguagem natural</h3>
+                        <p>
+                            Painel de vendas em que a pessoa pergunta aos dados em português
+                            e recebe a resposta com gráfico.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Streamlit</li>
+                            <li>LLM</li>
+                        </ul>
+                    </article>
+
+                    <article class="projeto-card">
+                        <span class="status">Em construção</span>
+                        <h3>Automação de resumo e envio de relatórios</h3>
+                        <p>
+                            Pega uma planilha ou e-mail, resume com IA e envia o resultado no Telegram ou Slack,
+                            sem trabalho manual.
+                        </p>
+                        <ul class="tags">
+                            <li>n8n ou Make</li>
+                            <li>API</li>
+                            <li>IA generativa</li>
+                        </ul>
+                    </article>
+
+                    <!--
+                    MODELO PARA QUANDO UM PROJETO ESTIVER PRONTO
+                    (troque a classe do card para "projeto-card publicado" e o status para "Publicado"):
+
+                    <article class="projeto-card publicado">
+                        <span class="status pronto">Publicado</span>
+                        <h3>Nome do projeto</h3>
+                        <p>Problema que resolve → o que você construiu → resultado com número real
+                           (ex.: "reduziu de 20 para 5 minutos por tarefa").</p>
+                        <ul class="tags"><li>Ferramenta 1</li><li>Ferramenta 2</li></ul>
+                        <div class="projeto-links">
+                            <a href="LINK_DA_DEMO" target="_blank" rel="noopener">Ver demo</a>
+                            <a href="LINK_DO_GITHUB" target="_blank" rel="noopener">Código</a>
+                            <a href="LINK_DO_VIDEO" target="_blank" rel="noopener">Vídeo de 60s</a>
+                        </div>
+                    </article>
+                    -->
+                </div>
+
+                <div class="projetos-nota">
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    <p>
+                        <strong>Como cada projeto será apresentado:</strong>
+                        o problema, a solução, as ferramentas usadas, o resultado medido,
+                        um link para a demo e o código no GitHub.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SOBRE MIM ================= -->
+        <section class="section alt" id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="sobre-grid">
+                    <div class="sobre-texto">
+                        <p>
+                            Sou estudante de Ciência de Dados e Inteligência Artificial na UNISO e Técnica em
+                            Desenvolvimento de Sistemas pelo Senac Sorocaba.
+                        </p>
+                        <p>
+                            Tenho interesse em tecnologia, análise de dados e inteligência artificial, principalmente 
+                            em como essas áreas podem ajudar a resolver problemas e melhorar processos. Gosto de aprender 
+                            coisas novas, explorar ferramentas e transformar ideias em soluções que possam ser aplicadas na prática.
+                        </p>
+                        <p>
+                            Busco uma oportunidade para ganhar experiência prática, aprender com um time
+                            e contribuir com soluções eficazes em um ambiente dinâmico e colaborativo.
+                        </p>
+                    </div>
+
+                    <ul class="sobre-info">
+                        <li><b>Nome</b> Bruna Fiusa</li>
+                        <li><b>E-mail</b> <a href="mailto:bruna.fiusa2006@gmail.com">bruna.fiusa2006@gmail.com</a></li>
+                        <li><b>Local</b> Sorocaba, São Paulo</li>
+                        <li><b>Foco</b> Dados, automação e IA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HABILIDADES ================= -->
+        <section class="section dark" id="habilidades">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-lead">Tecnologias com as quais já trabalhei e o que estou praticando agora.</p>
+
+                <div class="habilidades-grid">
+                    
+                     <div class="habilidades-box">
+                        <h3>Business Intelligence</h3>
+                        <p class="nota">Análise e visualização</p>
+                        <ul class="chips">
+                            <li>Power BI</li>
+                            <li>DAX</li>
+                            <li>Excel avançado</li>
+                            <li>Dashboards</li>
+                        </ul>
+                    </div>
+
+                    <div class="habilidades-box">
+                        <h3>Dados e programação</h3>
+                        <p class="nota">Base técnica</p>
+                        <div class="badges">
+                            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                            <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                            <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+                            <img src="https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white" alt="JavaFX">
+                            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                            <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                            <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                            <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                        </div>
+                    </div>
+
+                    <div class="habilidades-box">
+                        <h3>Soft skills</h3>
+                        <p class="nota">Como eu trabalho</p>
+                        <ul class="chips">
+                            <li>Proatividade</li>
+                            <li>Criatividade</li>
+                            <li>Organização</li>
+                            <li>Comprometimento</li>
+                            <li>Comunicação</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FORMAÇÃO ================= -->
+        <section class="section" id="formacao">
+            <div class="container">
+                <h2 class="section-title">Formação</h2>
+                <p class="section-lead">Da base técnica à graduação em dados e IA.</p>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="logo-box">
+                            <img src="img/senac.png" alt="Logo do Senac">
+                        </div>
+                        <div>
+                            <h3>Ensino Médio Técnico em TI</h3>
+                            <p class="periodo">Senac Sorocaba · Concluído em 2024</p>
+                            <p>Ensino médio integrado ao técnico em Tecnologia da Informação.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="logo-box">
+                            <img src="img/senac.png" alt="Logo do Senac">
+                        </div>
+                        <div>
+                            <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                            <p class="periodo">Senac Sorocaba · Concluído em 2026</p>
+                            <p>Programação, banco de dados e desenvolvimento de aplicações.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item atual">
+                        <div class="logo-box">
+                            <img src="img/uniso.png" alt="Logo da Uniso">
+                        </div>
+                        <div>
+                            <h3>Bacharelado em Ciência de Dados e Inteligência Artificial</h3>
+                            <p class="periodo">Universidade de Sorocaba (UNISO) · Desde 2025</p>
+                            <p>Cursando. Análise de dados, aprendizado de máquina e inteligência artificial.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CURSOS ================= -->
+        <section class="section alt" id="cursos">
+            <div class="container">
+                <h2 class="section-title">Cursos</h2>
+                <p class="section-lead">Cursos complementares.</p>
+
+                <div class="cursos-grid">
+                    <div class="curso-grupo">
+                        <h3><i class="fa-solid fa-chart-column" aria-hidden="true"></i> Dados e BI</h3>
+                        <ul>
+                            <li>Excel Avançado <span>Senac 2022</span></li>
+                            <li>Business Intelligence com Power BI <span>Senac 2023</span></li>
+                            <li>Power BI: Funções DAX <span>Senac 2024</span></li>
+                            <li>Excel: Planilhas Interativas e Dashboard <span>Senac 2024</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="curso-grupo">
+                        <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Programação e tecnologia</h3>
+                        <ul>
+                            <li>Básico de Python <span>Cisco 2023</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="curso-grupo">
+                        <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Redes e segurança</h3>
+                        <ul>
+                            <li>Conceitos básicos de Redes <span>Cisco 2024</span></li>
+                            <li>Segurança de Endpoint <span>Cisco 2024</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="curso-grupo">
+                        <h3><i class="fa-solid fa-bullhorn" aria-hidden="true"></i> Mídias digitais</h3>
+                        <ul>
+                            <li>Planejamento Estratégico de Conteúdo para Mídias Sociais <span>Senac 2023</span></li>
+                            <li>Criação de Conteúdo para Mídias Digitais <span>Senac 2023</span></li>
+                            <li>Criação de Posts para Redes Sociais <span>Senac 2023</span></li>
+                            <li>Monitoramento de Mídias Sociais <span>Senac 2023</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="curso-grupo">
+                        <h3><i class="fa-solid fa-language" aria-hidden="true"></i> Idiomas</h3>
+                        <ul>
+                            <li>Inglês Avançado <span>Senac 2024</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTATO ================= -->
+        <section class="section dark contato" id="contato">
+            <div class="container">
+                <h2 class="section-title">Vamos conversar?</h2>
+                <p class="section-lead">
+                    Estou em busca de uma oportunidade de estágio em dados e IA. Me chame por e-mail ou LinkedIn.
+                </p>
+                <div class="contato-botoes">
+                    <a href="mailto:bruna.fiusa2006@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+                    <a href="https://www.linkedin.com/in/bruna-fiusa/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/BrunaFiusa" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <p class="rodape">© <span id="ano">2026</span> Bruna Fiusa</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Menu mobile
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu');
+
+        function fecharMenu() {
+            menu.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menu');
+            toggle.firstElementChild.className = 'fa-solid fa-bars';
+        }
+
+        toggle.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', aberto);
+            toggle.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+            toggle.firstElementChild.className = aberto ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        });
+
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', fecharMenu));
+
+        // Marca no menu a seção que está na tela
+        const links = [...menu.querySelectorAll('a')];
+        const secoes = links.map(l => document.querySelector(l.getAttribute('href')));
+
+        const observador = new IntersectionObserver(entradas => {
+            entradas.forEach(e => {
+                if (e.isIntersecting) {
+                    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+
+        secoes.forEach(s => s && observador.observe(s));
+
+        // Ano do rodapé
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
